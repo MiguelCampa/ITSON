@@ -85,9 +85,9 @@ public class CURSO {
             puntuacion += puntosObtenidos;
             
             if (puntosObtenidos > 0) {
-                System.out.println("✔ Correcto! Ganaste " + puntosObtenidos + " puntos.\n");
+                System.out.println(" Correcto! Ganaste " + puntosObtenidos + " puntos.\n");
             } else {
-                System.out.println("✘ Incorrecto! La respuesta correcta es: " + pregunta.getRespuestaCorrecta() + "\n");
+                System.out.println(" Incorrecto! La respuesta correcta es: " + pregunta.getRespuestaCorrecta() + "\n");
             }
         }
     }    
