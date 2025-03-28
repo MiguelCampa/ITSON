@@ -46,11 +46,11 @@ public class MAIN {
          //al participante que al responder bien se le daran 20 puntos
          switch (nivelSeleccionado) {
              case PRINCIPIANTE -> {
-                 curso.agregarPregunta(new PREGUNTA("¿Como se dice 'manzana' en ingles?", "apple", 20));
-                 curso.agregarPregunta(new PREGUNTA("¿Como se dice 'perro' en ingles?", "dog", 20));
-                 curso.agregarPregunta(new PREGUNTA("¿Como se dice 'gato' en ingles?", "cat", 20));
-                 curso.agregarPregunta(new PREGUNTA("¿Como se dice 'casa' en ingles?", "house", 20));
-                 curso.agregarPregunta(new PREGUNTA("¿Como se dice 'agua' en ingles?", "water", 20));
+                 curso.agregarPregunta(new PREGUNTA("Como se dice 'manzana' en ingles?", "apple", 20));
+                 curso.agregarPregunta(new PREGUNTA("Como se dice 'perro' en ingles?", "dog", 20));
+                 curso.agregarPregunta(new PREGUNTA("Como se dice 'gato' en ingles?", "cat", 20));
+                 curso.agregarPregunta(new PREGUNTA("Como se dice 'casa' en ingles?", "house", 20));
+                 curso.agregarPregunta(new PREGUNTA("Como se dice 'agua' en ingles?", "water", 20));
              }
              case INTERMEDIO -> {
                  curso.agregarPregunta(new PREGUNTA("Completa la oracion: 'I ___ to the park every day.'", "go", 20));
