@@ -6,6 +6,7 @@ package mx.itson.duolingo.entidades;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import mx.itson.duolingo.enums.NIVEL;
 
 /**
@@ -75,6 +76,22 @@ public class CURSO {
         this.puntuacion = 0;
     }
 
+        public void realizarExamen(Scanner scanner) {
+        for (PREGUNTA pregunta : preguntas) {
+            System.out.println(pregunta.getEnunciado());
+            System.out.print("Tu respuesta: ");
+            String respuesta = scanner.nextLine();
+            int puntosObtenidos = pregunta.verificarRespuesta(respuesta);
+            puntuacion += puntosObtenidos;
+            
+            if (puntosObtenidos > 0) {
+                System.out.println("✔ Correcto! Ganaste " + puntosObtenidos + " puntos.\n");
+            } else {
+                System.out.println("✘ Incorrecto! La respuesta correcta es: " + pregunta.getRespuestaCorrecta() + "\n");
+            }
+        }
+    }    
+        
     public void agregarPregunta(PREGUNTA pregunta) {
         getPreguntas().add(pregunta);
     }
@@ -87,5 +104,9 @@ public class CURSO {
 
     public int getPuntuacion() {
         return puntuacion;
+    }
+
+    public void realizarExamen() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
