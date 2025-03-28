@@ -72,7 +72,7 @@ public class MAIN {
          curso.realizarExamen(scanner);
          
          //aqui se dira al finalizar cuanto sacaste en tu examen de ingles
-         System.out.println("Puntuación total: " + curso.getPuntuacion());
+         System.out.println("Tu puntuacion final es de : " + curso.getPuntuacion());
      }
     }
 }
